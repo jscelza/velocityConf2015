@@ -1,0 +1,27 @@
+{
+  "id": "/tools/docker/registry",
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "registry",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 5000,
+          "servicePort": 5000,
+          "hostPort": 0,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "env": {
+    "SETTINGS_FLAVOR": "local",
+    "STORAGE_PATH": "/docker_storage",
+    "HAPROXY_0_VHOST": "docker-registry.mesosphere.com",
+    "HAPROXY_0_SSL_CERT": "/etc/ssl/foo.pem"
+  },
+  "cpus": 0.5,
+  "mem": 1024,
+  "instances": 1
+}

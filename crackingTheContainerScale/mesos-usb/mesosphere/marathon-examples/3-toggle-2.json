@@ -1,0 +1,21 @@
+{
+  "id": "toggle",
+  "cmd": "python toggle.py $PORT0",
+  "cpus": 0.05,
+  "mem": 16.0,
+  "disk": 0.0,
+  "ports": [9002],
+  "instances": 3,
+  "uris": ["http://downloads.mesosphere.com/misc/toggle.tgz"],
+  "healthChecks": [
+    {
+      "protocol": "COMMAND",
+      "command": { "value": "curl -f $HOST:$PORT" },
+      "timeoutSeconds": 10,
+      "gracePeriodSeconds": 10,
+      "intervalSeconds": 2,
+      "maxConsecutiveFailures": 3
+    }
+  ]
+}
+

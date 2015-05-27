@@ -1,0 +1,37 @@
+{
+  "id": "department-a",
+  "apps": [
+    {
+      "id": "service-common",
+      "cpus": 0.1,
+      "mem": 32,
+      "ports": [0],
+      "cmd": "python -m SimpleHTTPServer $PORT0",
+      "instances": 2
+    }
+  ],
+  "groups": [
+    {
+      "id" : "product-a",
+      "apps":[
+        {
+          "id": "service-a",
+          "cpus": 0.1,
+          "mem": 32,
+          "ports": [0],
+          "cmd": "python -m SimpleHTTPServer $PORT0",
+          "instances": 2
+        },
+        {
+          "id": "service-b",
+          "cpus": 0.1,
+          "mem": 32,
+          "ports": [0],
+          "cmd": "python -m SimpleHTTPServer $PORT0",
+          "instances": 2
+        }
+      ]
+    }
+  ]
+}
+
