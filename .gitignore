@@ -1,0 +1,13 @@
+.pe_build
+.vagrant
+.DS_Store
+.orig
+.box
+.deb
+.rpm
+.dmg
+.msi
+.exe
+**.dot
+!puppet/modules/README
+puppet/modules/*
