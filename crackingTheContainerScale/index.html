@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    Get started with Mesosphere
+  </title>
+
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" type="image/png" href="assets/facivon.ico">
+  <link href="assets/style.css" media="all" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="navbar navbar-default navbar-static-top" role="navigation" style="background-color: #323539;">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Mesosphere" height="25" src="assets/mesosphere.png" width="148" style="margin-top:0px;">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse menu">
+      </div>
+    </div>
+  </div>
+
+  <div class="cluster development-cluster">
+    <div class="container" style="text-align:center;">
+      <ul class="list-inline" style="margin-bottom: 0;">
+        <li style="">
+          <span class="unit-label"><strong>Welcome to Velocity 2015!</strong></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1 col-md-push-11 text-center">
+
+        </div>
+        <div class="col-md-pull-1 col-md-11">
+
+          <div class="row">
+            <div class="col-md-4">
+            <img src="assets/icon.png" width="270" height="270" alt="Mesosphere logo" style="float: left;"/>
+            </div>
+            <div class="col-md-8">
+              <h1 class="section-header" style="margin-left:7px;">Get started with Mesosphere</h1>
+              <br>
+              <div>
+                <div class="dial dial-active" style="float:left;">1</div>
+                <p style="padding-top:6px;">Copy the mesos-usb folder from the USB drive to your computer</p>
+              </div>
+              <div class="highlight"><pre><code class="bash"><span class="nv">$ <span class="o">cp -R mesos-usb ~/workspace/mesos-usb</span><br></code></pre>
+              </div>
+
+              <br style="clear:both;">
+              <div>
+                <div class="dial dial-active" style="float:left;">2</div>
+                <p style="padding-top:6px;">Start the virtual machine</p>
+              </div>
+
+              <div class="highlight">
+                <pre><code class="bash"><span class="nv">$ <span class="o">cd ~/workspace/mesos-usb</span><br></code><code class="bash"><span class="nv">$ <span class="o">vagrant box add mesos mesos.box</span><br></code><code class="bash"><span class="nv">$ <span class="o">vagrant up</span></code></pre>
+                <div style="padding-left:52px; font-size:12px;">You'll need Vagrant and VirtualBox installed. 
+                  <br>Both are <a href="resources/index.html">available on this USB</a>.</div>
+                </div>
+              </div>
+
+              <br style="clear:both;">
+              <div>
+                <div class="dial dial-active" style="float:left;">3</div>
+                <p style="padding-top:6px;">Access the <a href="http://10.141.141.10:5050" title="Access the Mesos console at: 10.141.141.10:5050">local Mesos console</a></p>
+              </div>
+
+              <br style="clear:both;">
+              <div>
+                <div class="dial dial-active" style="float:left;">4</div>
+                <p style="padding-top:6px;">Access the <a href="http://10.141.141.10:8080" title="Access the Marathon console at: 10.141.141.10:8080">local Marathon console</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div>
+
+          <br><br>
+          <h3 class="section-header">What's next</h3>
+          <img src="assets/usb-stick.png" width="110" height="140" alt="USB" style="float:right; margin-right:35px;"/>
+          <div>
+            <ul>
+              <li><h4>Check out the <a href="https://github.com/mesosphere/rendler" title="Rendler" target="_blank">example RENDLER web crawler framework</a></h4></li>
+              <li><h4>Work through the <a href="http://docs.mesosphere.com/intro-course/" target="_blank">Mesosphere Intro Course</a></h4></li>
+              <li><h4>View presentation slides on <a href="https://mesosphere.github.io/presentations" title="Presentations" target="_blank">GitHub</a></h4></li>
+              <li><h4> Find more documentation, demos and tutorials online at <a href="http://docs.mesosphere.com" target="_blank">docs.mesosphere.com</a></h4></li>
+              <li><h4> <a href="http://mesosphere.com/learn/" target="_blank">Learn about the DCOS</a></h4></li>
+            </ul>
+          </div>
+        </div>
+        <br><br>
+      </div>
+
+    </div>
+    <footer>
+      <div class="container">
+        <div>
+          <ul class="list-inline">
+            <li><a class="text-muted" href="https://docs.mesosphere.com" target="_blank">Documentation</a></li>
+            <li><a class="text-muted" href="https://mesosphere.com/contact/" target="_blank">Contact</a></li>
+            <li><span class="text-muted">© 2015 Mesosphere, Inc.</span></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+  analytics.identify("8");
+  </script>
+  <script src="//mesosphere-assets.s3.amazonaws.com/deploy/em2/prod/assets/application-7727b63e64eb44d80e575831a6c3f486.js"></script>
+</body>
+</html>
